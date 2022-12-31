@@ -31,8 +31,12 @@ GMAIL_PASSWORD: your_password
 TWILIO_ACCOUNT_SID: LONG_STRING
 TWILIO_AUTH_TOKEN:  LONG_STRING
 
+# Node.js > v17 use OpenSSL v3.0 which has had breaking changes.
+# Resolution - set the NODE_OPTIONS env var to --openssl-legacy-provider
+NODE_OPTIONS: --openssl-legacy-provider
 
-## Heroku Config Variables (5 above included below)
+
+## Heroku Config Variables (above examples included below)
 
 # DATABASE_URL
 
@@ -73,3 +77,5 @@ TWILIO_AUTH_TOKEN:  LONG_STRING
 # TWILIO_ACCOUNT_SID
 
 # TWILIO_AUTH_TOKEN
+
+# NODE_OPTIONS
