@@ -16,7 +16,7 @@ class Ahoy::Visit < ApplicationRecord
 
   # Clean up bots that slip by Ahoy
   def self.clean
-           dirty.destroy_all
+    dirty.destroy_all
   end
 
   # Returns a string .. city and country of .last visit
