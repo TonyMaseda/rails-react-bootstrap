@@ -38,6 +38,8 @@ NODE_OPTIONS: --openssl-legacy-provider
 
 ## Heroku Config Variables (above examples included below)
 
+# NPM_CONFIG_PRODUCTION
+
 # DATABASE_URL
 
 # SITE_NAME
