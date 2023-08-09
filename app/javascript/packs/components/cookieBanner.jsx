@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 // https://www.npmjs.com/package/react-cookienotice
-import CookieNotice from 'react-cookienotice'
-import('react-cookienotice/dist/index.css')
+import { CookieNotice } from 'react-cookienotice'
+import 'react-cookienotice/dist/style.css'
 
 class Cookie extends React.Component {
   constructor(props) {
