@@ -6,15 +6,10 @@
 ## Main Dependencies
 
 * Ruby [3.2.2](https://www.ruby-lang.org/en/downloads/releases/)
-* Ruby on Rails [7.0.6](https://rubygems.org/gems/rails/versions)
+* Ruby on Rails [7.2.2.1](https://rubygems.org/gems/rails/versions)
 * PostgreSQL [14.6](https://www.postgresql.org/support/versioning/)
-* Redis [4.6.0](https://rubygems.org/gems/redis/versions)
-* Webpacker [4.3.0](https://rubygems.org/gems/webpacker/versions)
-* Hotwire [0.1.3](https://rubygems.org/gems/hotwire-rails/versions)
-* Turbo [1.4.0](https://rubygems.org/gems/turbo-rails/versions) (yarn)
-* Stimulus [3.2.2](https://github.com/hotwired/stimulus/releases) (yarn)
-* React [18.2.0](https://reactjs.org/versions/) (yarn)
-* Bootstrap [5.3.1](https://getbootstrap.com/docs/versions/) (yarn)
+* React [19.1.1](https://reactjs.org/versions/) (yarn)
+* Bootstrap [5.3.6](https://getbootstrap.com/docs/versions/) (yarn)
 ```
 Building from scratch (Not cloning or forking)
 $ ruby -v
@@ -132,7 +127,7 @@ $ bin/webpack-dev-server (separate tab)
 
 > Resetting database
 ```
-$ rails db:drop db:create db:migrate RAILS_ENV=development
+$ DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=development rails db:drop db:create db:migrate
 $ rails db:seed
 ```
 > Importing Heroku database
