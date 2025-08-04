@@ -48,7 +48,7 @@ $ brakeman
 $ brakeman -o brakeman.html
 $ open brakeman.html
 
-$ bundler-audit
+$ bundler-audit check --update
 ```
 > Rspec + Simplecov
 ```

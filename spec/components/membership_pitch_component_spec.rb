@@ -1,10 +1,10 @@
 require "rails_helper"
 
-RSpec.describe MembershipPitchComponent, type: :component do
-  it "renders component" do
-    #
-  end
-end
+# RSpec.describe MembershipPitchComponent, type: :component do
+#   it "renders component" do
+#     #
+#   end
+# end
 
 RSpec.describe "pages/welcome.html.erb", type: :view do
   it "displays the membership pitch" do

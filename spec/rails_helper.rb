@@ -71,7 +71,7 @@ RSpec.configure do |config|
   config.include Devise::Test::ControllerHelpers, type: :component
 
   config.before(:each, type: :component) do
-    @request = controller.request
+    @request = controller.request if defined?(controller)
   end
 
   config.include ViewComponent::TestHelpers, type: :component
